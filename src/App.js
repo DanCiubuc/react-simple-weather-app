@@ -36,7 +36,7 @@ class App extends React.Component {
   getLocation = (e) => {
     e.preventDefault();
     if (document.getElementById("cityName").value === "") {
-      this.alertGen("Please enter a location.")
+      this.alertGen("Please enter a location.");
     } else {
       this.setState({location: document.getElementById("cityName").value});
     }    
